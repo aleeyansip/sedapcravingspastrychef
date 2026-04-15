@@ -22,14 +22,22 @@
 
     <section class="info-grid">
     <details class="info-card" name="info">
-        <summary>
-            <i>Collection Point?</i> <span>Click for more info</span>
-        </summary>
-        <div class="expanded-content">
-            <p>📍 <b>(belum kena decide lagi)</b></p>
-            <p>We also do UMS Campus delivery every (belum decide)!</p>
-        </div>
-    </details>
+    <summary>
+        <i>Collection Point?</i> <span>Click for more info</span>
+    </summary>
+    <div class="expanded-content">
+        <p><b>Delivery Rates:</b></p>
+        <ul style="list-style: none; padding-left: 0; margin-bottom: 15px;">
+            <li>📍 Dalam UMS: <b>RM1.80</b></li>
+            <li>📍 Luar UMS: <b>RM2.00</b></li>
+        </ul>
+        
+        <p style="background-color: #f0f7f0; padding: 10px; border-radius: 8px; font-size: 0.85rem; border-left: 4px solid #4a6d4a;">
+            🗓️ <b>Pre-order:</b> Monday - Thursday<br>
+            🚚 <b>Delivery:</b> Friday - Sunday
+        </p>
+    </div>
+</details>
 
     <details class="info-card" name="info">
         <summary>
@@ -90,6 +98,21 @@
         </div>
     </section>
 </main>
+<script>
+    // This part fixes the auto-closing for iPhone Safari
+    const details = document.querySelectorAll('details[name="info"]');
+    
+    details.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+            // Close all other details except the one clicked
+            details.forEach((detail) => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
 

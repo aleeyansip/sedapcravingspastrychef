@@ -33,20 +33,17 @@ header {
 }
 
 .hero {
-    /* Replace 'background-image' with your new filename */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('hero-bg.jpg'); 
+    text-align: center;
+    padding: 100px 20px; /* Increased padding for better spacing */
+    
+    /* This creates a dark tint so the white text is easy to read */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1515037893149-de7f840978e2?q=80&w=1000&auto=format&fit=crop'); 
     
     background-size: cover;
     background-position: center;
-    background-attachment: scroll; /* Better for mobile performance */
-    height: 60vh; /* Adjust height so it looks good on phone screens */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    background-attachment: fixed; /* Makes it look fancy when you scroll */
+    color: var(--white);
 }
 
 .hero h2 {
