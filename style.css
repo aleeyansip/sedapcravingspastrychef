@@ -166,16 +166,22 @@ header {
 }
 
 .logo-circle {
-    width: 80px;  /* Slightly bigger looks better when it's on top */
-    height: 80px;
+    width: 90px;  /* Let's make it a bit bigger since it's on top */
+    height: 90px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #4a6d4a;
-    margin-bottom: 15px; /* Adds space between logo and name */
+    border: 2px solid #4a6d4a; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background-color: #fff; /* White background helps if the logo has edges */
+    margin-bottom: 15px;
+}
+
+.logo-circle img {
+    width: 85%;    /* This creates a small gap so the logo doesn't touch the borders */
+    height: 85%;
+    object-fit: contain; /* This ensures the WHOLE logo is visible, not zoomed in */
 }
 
 h1 {
