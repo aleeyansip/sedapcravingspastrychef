@@ -38,7 +38,7 @@ header {
     
     /* This creates a dark tint so the white text is easy to read */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1515037893149-de7f840978e2?q=80&w=1000&auto=format&fit=crop'); 
+                url('hero-bg.jpg'); 
     
     background-size: cover;
     background-position: center;
