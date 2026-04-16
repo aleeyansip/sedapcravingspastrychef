@@ -197,3 +197,98 @@ h1 {
     color: #5d7a5d;
     margin-top: 5px;
 }
+
+.support-section {
+    background-color: #f9fbf9; /* Very light matcha tint */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.support-content h3 {
+    color: #2d4a2d;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.support-content p {
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+.educational-disclaimer {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    background-color: #4a6d4a; /* Matcha Green */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.05);
+    background-color: #3d5a3d;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.search-container input {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-container input:focus {
+    border-color: #4a6d4a; /* Matcha Green Focus */
+}
+
+.search-btn {
+    background-color: #4a6d4a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result-area {
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 50px;
+}
+
+.order-card {
+    background: white;
+    border-left: 5px solid #4a6d4a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: left;
+}
