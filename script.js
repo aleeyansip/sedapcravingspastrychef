@@ -42,12 +42,12 @@ async function loadOrderData() {
         allOrders = rows.slice(1).map(row => {
             const cols = row.split(',');
             return {
-                name: cols[2]?.trim(),      // Column B
-                day: cols[3]?.trim(),       // Column C
-                quantity: cols[4]?.trim(),  // Column D
-                location: cols[5]?.trim(),  // Column E
-                status: cols[6]?.trim(),    // Column F
-                phone: cols[7]?.replace(/[^0-9]/g, '').trim() // Column G
+                name: cols[1]?.trim(),      // Column B
+                day: cols[2]?.trim(),       // Column C
+                quantity: cols[3]?.trim(),  // Column D
+                location: cols[4]?.trim(),  // Column E
+                status: cols[5]?.trim(),    // Column F
+                phone: cols[6]?.replace(/[^0-9]/g, '').trim() // Column G
             };
         });
         console.log("Live Database Connected! 🟢");
