@@ -211,22 +211,19 @@ header {
 }
 
 .logo-circle {
-    width: 90px;  /* Let's make it a bit bigger since it's on top */
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #4a6d4a; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff; /* White background helps if the logo has edges */
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    background: none;
+    display: block;
     margin-bottom: 15px;
 }
 
 .logo-circle img {
-    width: 85%;    /* This creates a small gap so the logo doesn't touch the borders */
-    height: 85%;
-    object-fit: contain; /* This ensures the WHOLE logo is visible, not zoomed in */
+    width: 160px;
+    height: auto;
+    object-fit: contain;
 }
 
 h1 {
@@ -334,4 +331,36 @@ h1 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: inline-block;
     text-align: left;
+}
+
+.business-inquiry {
+    padding: 30px 20px 50px;
+    text-align: center;
+    background-color: #fcfdfc; /* Matches your matcha theme */
+}
+
+.divider {
+    width: 50px;
+    border: 1px solid #4a6d4a;
+    margin: 0 auto 20px;
+    opacity: 0.3;
+}
+
+.business-inquiry p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.email-link {
+    color: #4a6d4a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+    color: #2d4a2d;
 }
