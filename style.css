@@ -364,3 +364,23 @@ h1 {
     text-decoration: underline;
     color: #2d4a2d;
 }
+
+.announcement-bar {
+    background-color: #4a6d4a; /* Matcha Green */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.announcement-bar span {
+    display: block;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
